@@ -16,7 +16,10 @@ For the route to create just create a folder of that name, inside it create a fi
 
 I created routes of folders and of a new type of id based folder which works as a dynamic route.
 In this the team name will be same as of id that it gets or it chose.
+
+
 ## Day 4
+
 *January 2 2026*
 
-I learnt that if u created a dynamic route then all the dynamic values/urls/routes can be accessible only to that specific dynamic url.
+I learnt that if u created a dynamic route then all the dynamic values/urls/routes can be accessible only to that specific dynamic url.Then i learnt how to render them from map and use the dynamic ids for instance i created teams then i used these names and ids also their colors.I created teams of PSL as an example.

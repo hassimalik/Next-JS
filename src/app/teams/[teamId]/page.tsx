@@ -12,7 +12,7 @@ export default function TeamPage({ params }: PageProps) {
     Peshawar: { name: "Peshawar 🚀", members: 10, color: "bg-[#ead811]" },
     Quetta: { name: "Quetta 🔥", members: 15, color: "bg-[#220651]" },
     Islamabad: { name: "Islamabad 🌟", members: 12, color: "bg-[orange]" },
-    Multan: { name: "Multan 🚀", members: 10, color: "bg-[#074243]" },
+    Multan: { name: "Multan 🦁", members: 10, color: "bg-[#074243]" },
     Karachi: { name: "Karachi 🚀", members: 10, color: "bg-[#0e1c7a]" },
   }
   const team = teamData[teamId] || { name: "Unknown Team ❌", members: 0, color: "from-gray-700 via-gray-600 to-gray-500" }
