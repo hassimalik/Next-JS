@@ -23,3 +23,9 @@ In this the team name will be same as of id that it gets or it chose.
 *January 2 2026*
 
 I learnt that if u created a dynamic route then all the dynamic values/urls/routes can be accessible only to that specific dynamic url.Then i learnt how to render them from map and use the dynamic ids for instance i created teams then i used these names and ids also their colors.I created teams of PSL as an example.
+
+## Day 5
+
+*January 5 2026*
+
+I learnt the topics of what is client what is server what is CSR SSR and what are client side components and what are server side components so basically that is readymade and cannot be changed is bcoz of server side components like a layout.tsx file and which components change from route to route are client side components . So the file in app folder as layout file is a server side component and the file in components folder as ClickText.tsx is generally a client side component. It was the simplest example of client side and server side components.
