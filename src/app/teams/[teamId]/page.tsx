@@ -1,3 +1,4 @@
+"use client"
 import {use} from 'react'
 
 type PageProps = {
@@ -6,7 +7,6 @@ type PageProps = {
 
 export default function TeamPage({ params }: PageProps) {
   const {teamId} = use(Promise.resolve(params))
-
   // Dummy data for teams
   const teamData = {
     Peshawar: { name: "Peshawar 🚀", members: 10, color: "bg-[#ead811]" },

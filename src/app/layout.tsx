@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
@@ -34,9 +33,6 @@ export default function RootLayout({
         <main className="min-h-screen px-6 py-8">
           <div>
             {children}
-            <Link href="/button">
-              <button>Go to button page</button>
-            </Link>
           </div>
         </main>
         <Footer />

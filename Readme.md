@@ -6,10 +6,12 @@ I will mention my progress here whenever i contribute to this repository
 I created next JS app and learned about its folder structure
 
 ## Day 2
+
 *December 31 2025*
 
 I learnt the routes of Next JS how to create routes and nested routes.
 For the route to create just create a folder of that name, inside it create a file of page.ex and write all your code in it.
+
 ## Day 3 
 
 *1 Jan 2026*
@@ -29,3 +31,16 @@ I learnt that if u created a dynamic route then all the dynamic values/urls/rout
 *January 5 2026*
 
 I learnt the topics of what is client what is server what is CSR SSR and what are client side components and what are server side components so basically that is readymade and cannot be changed is bcoz of server side components like a layout.tsx file and which components change from route to route are client side components . So the file in app folder as layout file is a server side component and the file in components folder as ClickText.tsx is generally a client side component. It was the simplest example of client side and server side components.
+
+## Day 6
+
+*7 January 2026*
+
+I am learning hooks.First I used a useRouter hook. This hook is used to programmatically navigate to the desired path. 2nd i used usePathname hook which is used to view the current path of the web on which user is present. 3rd I used useSearchParams which is used to read query params of urls.
+
+
+## Day 7
+
+*January 8*
+
+I am debugging errors to fix the code and make it run without errors. These errors were caused by the hooks of Next JS. 
