@@ -25,15 +25,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" crxemulator="" >
+    <html lang="en" crxemulator="">
       <body
         className={`${geistSans.variable} ${geistMono.variable}  antialiased`}
       >
         <Header />
         <main className="min-h-screen px-6 py-8">
-          <div>
-            {children}
-          </div>
+          <div>{children}</div>
         </main>
         <Footer />
       </body>

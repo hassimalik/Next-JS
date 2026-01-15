@@ -44,3 +44,25 @@ I am learning hooks.First I used a useRouter hook. This hook is used to programm
 *January 8*
 
 I am debugging errors to fix the code and make it run without errors. These errors were caused by the hooks of Next JS. 
+
+## Day 8
+
+*January 13*
+
+I got the list of all the hooks of next js and these are given below 
+1. useRouter()
+2. usePathname()
+3. useSearchParams()
+4. useParams()
+5. use()
+6. useSelectedLayoutSegments()
+7. useMetaData()
+
+*React Hooks*
+
+1. useState()
+2. useEffect()
+3. useContext()
+4. useRef()
+5. useMemo()
+6. useCallback()

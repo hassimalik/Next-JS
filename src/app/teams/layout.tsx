@@ -7,9 +7,7 @@ export default function TeamsLayout({
 }) {
   return (
     <div className="min-h-screen bg-gray-900 text-white p-6">
-      <main>
-        {children}
-      </main>
+      <main>{children}</main>
     </div>
   );
 }
