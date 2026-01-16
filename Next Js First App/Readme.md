@@ -1,8 +1,10 @@
 # **Next JS**
+
 In this repository I will push code of my Next Js learning
 I will mention my progress here whenever i contribute to this repository
 
 ## Day 1
+
 I created next JS app and learned about its folder structure
 
 ## Day 2
@@ -66,3 +68,5 @@ I got the list of all the hooks of next js and these are given below
 4. useRef()
 5. useMemo()
 6. useCallback()
+
+## Day 7
