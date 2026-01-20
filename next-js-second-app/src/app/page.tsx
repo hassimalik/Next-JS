@@ -1,11 +1,14 @@
 "use client"
-import Counter from '@/app/components/Counter'
+import Link from 'next/link'
 
 export default function Home() {
   return (
     <div className="flex flex-col gap-4 mt-4 ml-4 text-xl">
-      <h1>TurboPack is insane</h1>
-      <Counter />
+      <nav>
+        <Link href="/posts" prefetch={true}>
+          Posts (Server + Client)
+        </Link>
+      </nav>
     </div>
   )
 }
