@@ -1,26 +1,20 @@
-// app/posts/page.tsx
-import ClientPosts from "./clientPosts";
+type Post = { id: number; title: string }
 
-async function getPosts() {
-    const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
-        next: { revalidate: 60 },
-    });
-    return res.json();
-}
-
-export default async function PostsPage() {
-    const posts = await getPosts();
-
-    return (
-        <div>
-            <h1>Posts (Server Fetch)</h1>
+export default async function PostsPage(){
+    try{
+        const res = await fetch("https://dummyjson.com/posts")
+        if(!res.ok) throw new Error("Failed to fetch posts")
+            const data : {posts : Post[]} = await res.json()
+        return(
             <ul>
-                {posts.slice(0, 5).map((post: any) => (
-                    <li key={post.id}>{post.title}</li>
-                ))}
+                {
+                    data.posts.slice(0, 5).map(post=>(
+                        <li key={post.id}>{post.title}</li>
+                    ))
+                }
             </ul>
-            <h2>Client Fetch below:</h2>
-            <ClientPosts />
-        </div>
-    );
+        )
+    } catch(error:any){
+        return <p>Error loading posts</p>
+    }
 }
