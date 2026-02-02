@@ -1,6 +1,7 @@
 "use client"
 
 import * as React from "react"
+
 import { Button } from "@/components/ui/button"
 import {
   Card,
@@ -12,12 +13,14 @@ import {
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Separator } from "@/components/ui/separator"
+
 import {
   Accordion,
   AccordionItem,
   AccordionTrigger,
   AccordionContent,
 } from "@/components/ui/accordion"
+
 import {
   NavigationMenu,
   NavigationMenuList,
@@ -26,6 +29,7 @@ import {
   NavigationMenuContent,
   NavigationMenuLink,
 } from "@/components/ui/navigation-menu"
+
 import { cn } from "@/lib/utils"
 
 export default function Home() {
@@ -55,11 +59,12 @@ export default function Home() {
           <CardHeader>
             <div className="flex justify-between items-start">
               <div>
-                <h2 className="text-xl font-semibold text-white">Login</h2>
+                <h2 className="text-xl font-semibold">Login</h2>
                 <CardDescription>
                   Enter your email to access your account.
                 </CardDescription>
               </div>
+
               <Button variant="link" className="text-blue-400 p-0 h-auto">
                 Sign Up
               </Button>
@@ -91,7 +96,7 @@ export default function Home() {
           </CardContent>
 
           <CardFooter className="justify-center border-t border-zinc-800 mt-4 pt-4">
-            <p className="text-sm text-gray-400 cursor-pointer hover:text-white transition-colors">
+            <p className="text-sm text-gray-400 hover:text-white cursor-pointer transition">
               Login with Google
             </p>
           </CardFooter>
@@ -107,7 +112,7 @@ export default function Home() {
 
       {/* Accordion */}
       <div className="max-w-xl mx-auto text-white">
-        <Accordion type="single" collapsible className="w-full">
+        <Accordion type="single" collapsible>
           <AccordionItem value="item-1" className="border-zinc-800">
             <AccordionTrigger className="hover:text-orange-500">
               Is it accessible?
@@ -136,14 +141,17 @@ export default function Home() {
               <NavigationMenuTrigger className="bg-transparent text-white hover:bg-zinc-900">
                 Docs
               </NavigationMenuTrigger>
+
               <NavigationMenuContent>
                 <ul className="grid w-[400px] gap-3 p-4 bg-black border border-zinc-800 rounded-md">
                   <ListItem title="Introduction" href="#">
                     Re-usable components built with Tailwind CSS.
                   </ListItem>
+
                   <ListItem title="Installation" href="#">
                     Learn how to setup shadcn with Next.js.
                   </ListItem>
+
                   <ListItem title="Typography" href="#">
                     Headings, paragraphs, and text utilities.
                   </ListItem>
@@ -153,15 +161,14 @@ export default function Home() {
           </NavigationMenuList>
         </NavigationMenu>
       </div>
-
     </div>
   )
 }
 
-/**
- * ListItem component for NavigationMenu 
- * This is usually manually defined in shadcn projects.
- */
+/* ------------------ */
+/* Navigation ListItem */
+/* ------------------ */
+
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
   React.ComponentPropsWithoutRef<"a"> & { title: string }
@@ -172,13 +179,15 @@ const ListItem = React.forwardRef<
         <a
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-zinc-900 hover:text-accent-foreground focus:bg-zinc-900 focus:text-accent-foreground",
+            "block rounded-md p-3 space-y-1 no-underline outline-none transition hover:bg-zinc-900",
             className
           )}
           {...props}
         >
-          <div className="text-sm font-medium leading-none text-orange-500">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-zinc-400">
+          <div className="text-sm font-medium text-orange-500">
+            {title}
+          </div>
+          <p className="text-sm text-zinc-400 line-clamp-2">
             {children}
           </p>
         </a>
@@ -186,4 +195,5 @@ const ListItem = React.forwardRef<
     </li>
   )
 })
+
 ListItem.displayName = "ListItem"
